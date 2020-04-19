@@ -1,0 +1,23 @@
+body {
+    font-family: microsoft jhenhei;
+}
+#banner{
+    background-image: url(../images/banner.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 3.5rem;
+}
+#carouselExampleCaptions{
+    margin-top: 3.5rem;
+}
+i{
+    color : rgb(18, 59, 106);
+}
+.carousel-caption{
+    background-color: rgba(76, 79, 80, 0.7);
+}
+.contOdd{
+
+    background-color: rgb(214, 224, 253);
+}
