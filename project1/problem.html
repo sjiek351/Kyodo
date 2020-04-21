@@ -9,7 +9,17 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
-    <title>NDHU Kyūdō Club 國立東華弓道社</title>
+    <title>常見問題</title>
+
+    <script>
+
+        function iconToggle(num) {
+            $("#icon" + num).toggleClass("fa-plus");
+            $("#icon" + num).toggleClass("fa-minus");
+
+        }
+
+    </script>
 </head>
 
 <body>
@@ -43,15 +53,22 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="about.html">社團簡介</a>
 
-                                <a class="dropdown-item" href="#">常見問題<span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="place.html">練習場地</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">聯絡方式</a>
+                                <a class="dropdown-item" href="#">常見問題<span class="sr-only">(current)</span></a>
                             </div>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <li class="list-inline-item">
-                            <a href="https://www.facebook.com/ndhu.kyudo/?epa=SEARCH_BOX">
+
+                            <a href="https://www.instagram.com/ndhukyudo/?hl=zh-tw" target="_blank">
+                                <span class="fa-stack fa-lg">
+
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.facebook.com/ndhu.kyudo/?epa=SEARCH_BOX" target="_blank">
                                 <span class="fa-stack fa-lg">
 
                                     <i class="fab fa-facebook-square fa-2x"></i>
@@ -72,30 +89,193 @@
                 <hr />
             </div>
         </div>
+
         <div class="row no-gutters">
-            
-            <div class="col-lg align-self-center text-center">
-                
+
+            <div class="col-lg-4 align-self-center text-center">
+                <img src="images/kyudotext-removebg-preview.png">
+
+            </div>
+
+            <div class="col-lg-8 align-self-center text-center">
+
+                <div id="accordianId" role="tablist" aria-multiselectable="true">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section1HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId"
+                                    onclick="iconToggle(1);">
+                                    <i id="icon1" class="fas fa-plus"></i> <b>沒接觸過弓道可以入社嗎 ?</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section1ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section1HeaderId">
+                            <div class="card-body">
+                                當然可以，目前所有社員都是入社前沒接觸過弓道，全台灣的弓道課程少之又少，不如說有接觸過弓道的人才更稀有。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section2HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId"
+                                    onclick="iconToggle(2);">
+                                    <i id="icon2" class="fas fa-plus"></i> <b>我力氣很小也能練弓道嗎 ?</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section2ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section2HeaderId">
+                            <div class="card-body">
+                                在弓道中是使用背肌來將弓引開，背肌是一般人平常不會鍛鍊到的肌肉，所以可以說大家的起跑點都是一樣的，不論生理性別如何、過去有沒有鍛鍊身體，社團都會教大家鍛鍊與使用正確的肌肉。
+                                <br /><small>備註 : 背肌平常隱藏在衣物之下，比較注重體態的朋友們可以放心鍛鍊。</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section3HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId"
+                                    onclick="iconToggle(3);">
+                                    <i id="icon3" class="fas fa-plus"></i> <b>弓道有沒有運動傷害 ?</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section3ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section3HeaderId">
+                            <div class="card-body">
+                                有，初學者比較常發生的運動傷害在左手大拇指關節處與左手前臂，以及臉頰右側，但是如果動作有做到位則不會有上述問題。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section4HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section4ContentId" aria-expanded="true" aria-controls="section4ContentId"
+                                    onclick="iconToggle(4);">
+                                    <i id="icon4" class="fas fa-plus"></i> <b>練習弓道需要花多少錢 ?</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section4ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section4HeaderId">
+                            <div class="card-body">
+                                <p>每學期只要繳交社費，社團將會提供公共裝備讓各位社員練習弓道，社費會用於社產的維護，按照慣例社費是 NT$500/學期
+                                    ，如果有調整則按照當屆幹部公告為主。<br /><br />
+                                    社團不定期會有團購的活動，但是不推薦初學者購買裝備(弓、手套)，因為價格不斐，有興趣的人可以瀏覽下列網站。</p>
+                                <a href="https://www.sambu.jp/" target="_blank">弓具の通販 山武弓具店（さんぶきゅうぐてん）</a><br />
+                                <a href="https://suizanmiyabi.com/" target="_blank">翠山弓具店SUIZAN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section5HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section5ContentId" aria-expanded="true" aria-controls="section5ContentId"
+                                    onclick="iconToggle(5);">
+                                    <i id="icon5" class="fas fa-plus"></i> <b>如何能更了解弓道社 ?</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section5ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section5HeaderId">
+                            <div class="card-body">
+                                <p>你可以在社團博覽會時前來我們的攤位，或是參加迎新茶會、體驗活動，幫助你深入了解社團以及日本弓道，詳細資訊請關注<a href="https://www.facebook.com/ndhu.kyudo/?epa=SEARCH_BOX">粉專</a>。
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section6HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section6ContentId" aria-expanded="true" aria-controls="section6ContentId"
+                                    onclick="iconToggle(6);">
+                                    <i id="icon6" class="fas fa-plus"></i> <b>什麼時候可以開始射箭 ?</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section6ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section6HeaderId">
+                            <div class="card-body">
+                                <p>首先，弓箭是具有殺傷力的武器，各位朋友要有這樣一個認知，不安全的使用弓箭可能會對自己或他人造成傷害，所以在學習的過程中會有前輩在一旁帶領，以免造成遺憾，這也是社團規章中的一部份。<br />
+                                    上學期末會有綜合考試，評估社員是否能安全行射，以及是否可以自行練習。
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="section7HeaderId">
+                            <h5 class="mb-0">
+                                <a class="cardproblem" data-toggle="collapse" data-parent="#accordianId"
+                                    href="#section7ContentId" aria-expanded="true" aria-controls="section7ContentId"
+                                    onclick="iconToggle(7);">
+                                    <i id="icon7" class="fas fa-plus"></i> <b>相關連結</b>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="section7ContentId" class="collapse in" role="tabpanel"
+                            aria-labelledby="section7HeaderId">
+                            <div class="card-body">
+                                <ul>
+                                    <li><a href="https://zh.wikipedia.org/wiki/%E5%BC%93%E9%81%93"
+                                            target="_blank">Wikipedia</a>
+
+                                    </li>
+
+                                    <li><a href="https://zh-tw.facebook.com/nccukyudo/" target="_blank">政治大學弓道社</a>
+
+                                    </li>
+
+                                    <li><a href="https://zh-tw.facebook.com/fjukyudo/" target="_blank">輔仁大學弓道社</a>
+
+                                    </li>
+
+                                    <li><a href="https://zh-tw.facebook.com/tamkang.kyudo.wait4u"
+                                            target="_blank">淡江大學弓道社</a>
+
+                                    </li>
+
+
+                                    <li><a href="https://www.facebook.com/pages/category/Amateur-Sports-Team/%E5%8C%97%E7%A7%91%E5%BC%93%E9%81%93%E7%A4%BE-114133023281404/"
+                                            target="_blank">臺北科技大學弓道社</a>
+
+                                    </li>
+
+                                    <li><a href="https://zh-tw.facebook.com/TNGS.kyudo/" target="_blank">台南女中弓道部</a>
+
+                                    </li>
+                                    <li><a href="https://zh-tw.facebook.com/TaiwanUniversityKyudoLeague/"
+                                            target="_blank">臺灣大專弓道聯賽</a>
+
+                                    </li>
+                                    <li><a href="https://www.kyudo.org.tw/home" target="_blank">臺灣弓道協會</a>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
 
-        </div>
-        <div class="row no-gutters">
-            
-            <div class="col-lg align-self-center text-center">
-                
-            </div>
-
-            <div class="col-lg align-self-center text-center">
-               
-
-            </div>
 
         </div>
     </div>
     <!-- Footer -->
     <footer>
+        <hr />
         <div class="container">
             <div class="row justify-content-center">
                 &copy 2020 NDHU Kyūdō Club 國立東華弓道社

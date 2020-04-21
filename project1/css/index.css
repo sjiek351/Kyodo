@@ -19,8 +19,15 @@ i{
 }
 .contOdd{
 
-    background-color: rgb(214, 224, 253);
+    background-color: rgb(242, 242, 242);
 }
 .title{
     color : rgb(18, 59, 106);
 }
+.cardproblem{
+    color: black;
+}
+.card-body{
+    text-align: left;
+}
+
