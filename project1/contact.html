@@ -6,13 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Serif+TC:wght@500&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
 
-    <title>社團簡介</title>
+    <title>聯絡本站</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        .iframe-container {
+            padding-bottom: 820px;
+        }
+
+        #warning p {
+            margin-top: 12px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            font-size:medium;
+        }
+
+        #warning {
+            position: relative;
+        }
+
+        #warning #img-cat {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        #img-cat {
+            width: 150%;
+        }
+
+        @media screen and (max-width: 992px) {
+            #img-cat {
+                display:none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -20,9 +56,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="front.html"><img width="30" height="30" src="images/logo.png"> <span
-                    id="nav-title"><b>NDHU Kyūdō
-                            Club</b></span></a>
+                <a class="navbar-brand" href="front.html"><img width="30" height="30" src="images/logo.png">
+                    <span id="nav-title"><b>NDHU KyūdōClub</b></span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -44,11 +79,12 @@
                                 關於我們
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item active" href="about.html">社團簡介<span class="sr-only">(current)</span></a>
+                                <a class="dropdown-item" href="about.html">社團簡介</a>
                                 <a class="dropdown-item" href="place.html">練習場地</a>
                                 <a class="dropdown-item" href="problem.html">常見問題</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="contact.html">聯絡本站</a>
+                                <a class="dropdown-item active" href="contact.html">聯絡本站<span
+                                    class="sr-only">(current)</span></a>
                             </div>
                         </li>
                     </ul>
@@ -72,75 +108,42 @@
             </div>
         </nav>
     </header>
+
     <div id="banner"> </div>
 
     <div class="container my-3">
         <div class="title row no-gutters">
             <div class="col-lg">
-                <h3><i class="fas fa-file-alt"></i> 社團簡介<small></small></h3>
+                <h3><i class="fas fa-envelope"></i> 聯絡本站<small></small></h3>
                 <hr />
             </div>
         </div>
+
         <div class="row no-gutters">
-            <div class="col-lg align-self-center text-center">
-                <img src="images\kyudoman.png" style="width: 100%">
+            <div class="col-lg-4 text-center" id="warning">
+                <p>
+                    此表單將會聯絡本網站的製作者，若有任何與社團相關的問題，請至<a
+                        href="https://www.facebook.com/pg/ndhu.kyudo/about/?ref=page_internal"
+                        target="_blank">臉書粉專</a>詢問，謝謝 !
+                        <br /><br />本網站非營利目的，如有侵權請聯絡本站刪除。
+                </p>
+                <img id="img-cat" src="images/cat.png">
 
             </div>
 
-            <div class="col-lg align-self-center text-center">
-                <div class="title">
-                    <h5><b>| 社團起源</b></h5>
+            <div class="col-lg-8 align-self-center text-center">
+                <div class="iframe-container">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdtOFtTyh6pCvvhM4pkGMtV_teltpklbLrgB6-Q0KrjW6oQ0w/viewform?embedded=true"
+                        width="640" height="709" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
                 </div>
-                <p>國立東華大學弓道社，草創於西元2005年，是全台灣最古老的弓道社，由林柳余同學出任創社社長，宗旨為學習與推廣日本弓道運動。</p><br />
-
-                <p>在這裡可以學習日本弓道的禮節與射箭動作，<br />藉此鍛鍊心靈與體魄，<br />體現弓道「真、善、美」之精神，<br />教材取自全日本弓道聯盟編《弓道教本》，<br />使得所有社員皆能正常行射，<br />畢業後更可以自行練習弓道，<br />雖然不是很輕鬆但是卻很有成就感，<br />希望有相同興趣的人可以加入一起成長。
                 </p>
 
             </div>
 
 
         </div>
-        <div class="row no-gutters">
 
-            <div class="col-lg align-self-center text-center">
-                <div class="title">
-                    <h5><b>| 社辦地圖</b></h5>
-                </div>
-                <div class="iframe-container">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3647.852683906269!2d121.53504900000001!3d23.894842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468a3fd1052c401%3A0x6daf0a954a668ef9!2zOTc06Iqx6JOu57ij5aO96LGQ6YSJ5aSa5a656aSo!5e0!3m2!1szh-TW!2stw!4v1587310661302!5m2!1szh-TW!2stw"
-                        width="" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </div>
-                <p></p>
-            </div>
-
-            <div class="col-lg align-self-center text-center">
-                <div class="title">
-                    <h5><b>| 社團資訊</b></h5>
-                </div>
-                <p>社團辦公室 : 多容館B305<br />
-                    社團指導老師 : 劉康文老師</p>
-                <div class="title">
-                    <h5><b>| 如何入社</b></h5>
-                </div>
-                <p>凡東華教職員生，認同社團宗旨，讀過社團組織章程，以及繳交社費後，
-                    經社團會員大會審定上述資格符合，即可正式加入本社團。</p>
-                <div class="title">
-                    <h5><b>| 歷屆社長</b></h5>
-                </div>
-
-                首任社長／林柳余 。 第二任／謝依靜<br />
-                第三任／張雅婷 。 第四任／粘意屏<br />
-                第五任／劉桂君 。 第六任／吳郁蓁<br />
-                第七任／梁福進 。 第八任／洪雅筑<br />
-                第九任／陳昱先 。 第十任／劉志遠<br />
-                第十一任／許廷毓 。 第十二任／陳珮甄<br />
-                第十三任／林千里 <br />
-
-            </div>
-
-        </div>
     </div>
     <!-- Footer -->
     <footer>

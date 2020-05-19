@@ -7,10 +7,11 @@
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Serif+TC:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
-    
+
 
     <title>練習場地</title>
 </head>
@@ -21,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="front.html"><img width="30" height="30" src="images/logo.png"> <span
-                        style="font-family: 'Indie Flower', cursive;"><b>NDHU Kyūdō
+                    id="nav-title"><b>NDHU Kyūdō
                             Club</b></span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,7 +32,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html"><i class="fas fa-home" style="color: black"></i> 首頁
                             </a>
                         </li>
@@ -45,10 +46,10 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="about.html">社團簡介</a>
-
-                                <a class="dropdown-item" href="place.html">練習場地<span class="sr-only">(current)</span></a>
-                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item  active" href="place.html">練習場地<span class="sr-only">(current)</span></a>
                                 <a class="dropdown-item" href="problem.html">常見問題</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="contact.html">聯絡本站</a>
                             </div>
                         </li>
                     </ul>
@@ -99,11 +100,12 @@
                 <div class="title">
                     <h5><b>| 行車路線</b></h5>
                 </div>
-                <iframe
-                    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fndhu.kyudo%2Fvideos%2F921264758067747%2F&show_text=false&width=734&height=411&appId"
-                    width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-
+                <div class="iframe-container">
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fndhu.kyudo%2Fvideos%2F921264758067747%2F&show_text=false&width=734&height=411&appId"
+                        width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+                </div>
             </div>
             <div class="col-lg order-lg-first "><img src="images/map.jpg" style="width : 100%"></div>
         </div>

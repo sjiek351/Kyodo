@@ -1,6 +1,11 @@
-body {
-    font-family: microsoft jhenhei;
+body{
+    font-family: 'Noto Serif TC', microsoft jhenhei, serif;
 }
+
+#nav-title{  
+    font-family: 'Indie Flower', cursive;
+}
+
 #banner{
     background-image: url(../images/banner.jpg) ;
     background-position: center center;
@@ -29,5 +34,19 @@ i{
 }
 .card-body{
     text-align: left;
+}
+.iframe-container{
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 100%;
 }
 

@@ -1,11 +1,16 @@
-body {
-    font-family: microsoft jhenhei;
+body{
+    font-family: 'Noto Serif TC', microsoft jhenhei, serif;
     background-image: url(../images/front.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center center;
     background-size: cover;
 }
+
+#nav-title{  
+    font-family: 'Indie Flower', cursive;
+}
+
 .col-lg-5{
     background-color: rgba(207, 241, 252, 0.7);
 }

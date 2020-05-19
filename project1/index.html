@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Serif+TC:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
-    
+
     <title>國立東華弓道社首頁</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        .iframe-container{
+            padding-bottom: 500px;
+        }
+        .iframe-container iframe{
+            top:0;
+            left:0;
+            right: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +32,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="front.html"><img width="30" height="30" src="images/logo.png"> <span
-                        style="font-family: 'Indie Flower', cursive;"><b>NDHU Kyūdō
+                        id="nav-title"><b>NDHU Kyūdō
                             Club</b></span></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -44,10 +56,10 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="about.html">社團簡介</a>
-
                                 <a class="dropdown-item" href="place.html">練習場地</a>
-                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="problem.html">常見問題</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="contact.html">聯絡本站</a>
                             </div>
                         </li>
                     </ul>
@@ -177,24 +189,26 @@
                             <h5>地址 : 97401 花蓮縣壽豐鄉大學路二段一號</h5>
                         </li>
                     </ul><br />
-                    <h5>在粉專上有社團最新的資訊，想知道各種活動詳情請持續關注粉專。<br />
-                        <a href="problem.html">常見問題</a>收錄了大部分問題，如有其他疑問也歡迎至粉專詢問，我們會盡力為你解答。 <br />
-                        歡迎有興趣練習弓道的朋友們一起加入我們 !</h5>
-                    <p>如果你是東華教職員生，你可以在社團博覽會時前來我們的攤位，或是參加上學期初的體驗活動讓你更了解弓道。<br />
-                        如果你是社會人士，請私訊我們的粉專詢問，我們會盡快回覆你。</p>
+                    <h5>在粉專上有社團最新的資訊，想知道各種活動詳情請持續關注粉專。<br /><br />
+                        <a href="problem.html">常見問題</a>收錄了大部分問題，如有其他疑問也歡迎至粉專詢問，我們會盡力為你解答。 <br /><br />
+                        <div class="title">
+                            <h5><b>| 歡迎有興趣練習弓道的朋友們一起加入我們 !</b></h5></div><br />
+                    <p><small>如果你是東華教職員生，你可以在社團博覽會時前來我們的攤位，或是參加上學期初的體驗活動讓你更了解弓道。<br />
+                        如果你是社會人士，請私訊我們的粉專詢問，我們會盡快回覆你。</small></p>
 
                 </div>
                 <div class="col-lg-4 my-3">
-                    <div class="fb-page" data-href="https://www.facebook.com/ndhu.kyudo/"
-                        data-tabs="timeline,events,messages" data-width="320" data-height="400" data-small-header="false"
-                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/ndhu.kyudo/" class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/ndhu.kyudo/">國立東華大學弓道部 NDHU Kyūdō Club</a>
-                        </blockquote>
+                    <div class="iframe-container">
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fndhu.kyudo%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="300" height="500" style="border:none;" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media" ></iframe>
                     </div>
                 </div>
             </div>
-        </article>
+    </div>
+    </article>
 
     </div>
     <!-- Footer -->
@@ -211,8 +225,5 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0"></script>
 
 </html>
