@@ -1,47 +1,67 @@
-body{
+body {
     font-family: 'Noto Serif TC', microsoft jhenhei, serif;
 }
 
-#nav-title{  
-    font-family: 'Indie Flower', cursive;
+img{
+    max-width: 100%;
 }
 
-#banner{
-    background-image: url(../images/banner.jpg) ;
+nav img{
+    width: 30px;
+    height: 30px;
+}
+
+#nav-title {
+    font-family: 'Marck Script', cursive;
+}
+
+.nav-item i{
+color: black;
+}
+
+#banner {
+    background-image: url(../images/banner.jpg);
     background-position: center center;
     background-size: cover;
     height: 200px;
     margin-top: 3.5rem;
 }
-#carouselExampleCaptions{
+
+#carouselExampleCaptions {
     margin-top: 3.5rem;
 }
-i{
-    color : rgb(18, 59, 106);
+
+i {
+    color: rgb(18, 59, 106);
 }
-.carousel-caption{
+
+.carousel-caption {
     background-color: rgba(76, 79, 80, 0.7);
 }
-.contOdd{
 
+.contOdd {
     background-color: rgb(242, 242, 242);
 }
-.title{
-    color : rgb(18, 59, 106);
+
+.title {
+    color: rgb(18, 59, 106);
 }
-.cardproblem{
+
+.cardproblem {
     color: black;
 }
-.card-body{
+
+.card-body {
     text-align: left;
 }
-.iframe-container{
+
+.iframe-container {
     position: relative;
     height: 0;
     padding-bottom: 56.25%;
-
 }
-.iframe-container iframe{
+
+.iframe-container iframe {
     position: absolute;
     top: 0;
     left: 5%;
@@ -49,4 +69,3 @@ i{
     width: 90%;
     height: 100%;
 }
-

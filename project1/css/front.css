@@ -1,22 +1,51 @@
-body{
-    font-family: 'Noto Serif TC', microsoft jhenhei, serif;
+body {
+    font-family: 'Marck Script', 'Noto Serif TC', microsoft jhenhei, serif;
     background-image: url(../images/front.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:center center;
+    background-position: center center;
     background-size: cover;
+    font-size: large;
 }
 
-#nav-title{  
-    font-family: 'Indie Flower', cursive;
+nav img {
+    width: 30px;
+    height: 30px;
 }
 
-.col-lg-5{
-    background-color: rgba(207, 241, 252, 0.7);
+.nav-item i {
+    color: black;
 }
-.text{
+
+article {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+article h1 {
+    font-size: 2.2rem;
+}
+
+article h2 {
+    font-size: 2.3rem;
+}
+
+.text {
     height: 100vh;
 }
-i{
-    color : rgb(18, 59, 106);
+
+i {
+    color: rgb(18, 59, 106);
+}
+
+@media (max-width:991.98px) {
+    article {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media (min-height:1024px) {
+    article {
+        padding-top: 20%;
+    }
 }

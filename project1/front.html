@@ -1,25 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-TW">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>NDHU Kyūdō Club 國立東華弓道社</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/front.css">
 	<link rel="shortcut icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 48x48 64x64" href="images/favicon.ico">
-    
-
-	<title>NDHU Kyūdō Club 國立東華弓道社</title>
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 			<div class="container">
-
-				<a class="navbar-brand" href="front.html"><img width="30" height="30" src="images/logo.png"> <span id="nav-title"><b>NDHU Kyūdō
-                    Club</b></span></a>
+				<a class="navbar-brand" href="front.html"><img src="images/logo.png">
+					<span id="nav-title"><b>NDHU Kyūdō Club</b></span></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse"
 					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					aria-label="Toggle navigation">
@@ -29,7 +26,8 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="index.html"><i class="fas fa-home" style="color: black"></i> 首頁</a>
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>
+								首頁</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="kyudo.html">認識弓道</a>
@@ -40,51 +38,54 @@
 								關於我們
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="about.html">社團簡介</a>
-                                <a class="dropdown-item" href="place.html">練習場地</a>
-                                <a class="dropdown-item" href="problem.html">常見問題</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="contact.html">聯絡本站</a>
-                            </div>
+								<a class="dropdown-item" href="about.html">社團簡介</a>
+								<a class="dropdown-item" href="place.html">練習場地</a>
+								<a class="dropdown-item" href="problem.html">常見問題</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="contact.html">聯絡本站</a>
+							</div>
 						</li>
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
 						<li class="list-inline-item">
-							<a href="https://www.instagram.com/ndhukyudo/?hl=zh-tw"  target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    
-                                    <i class="fab fa-instagram fa-2x"></i>
-                                </span>
-                            </a>
-                            <a href="https://www.facebook.com/ndhu.kyudo/?epa=SEARCH_BOX"  target="_blank">
-                                <span class="fa-stack fa-lg">
-                                    
-                                    <i class="fab fa-facebook-square fa-2x"></i>
-                                </span>
-                            </a>
+							<a href="https://www.instagram.com/ndhukyudo/?hl=zh-tw" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fab fa-instagram fa-2x"></i>
+								</span>
+							</a>
+							<a href="https://www.facebook.com/ndhu.kyudo/?epa=SEARCH_BOX" target="_blank">
+								<span class="fa-stack fa-lg">
+									<i class="fab fa-facebook-square fa-2x"></i>
+								</span>
+							</a>
 						</li>
 					</form>
 				</div>
 			</div>
 		</nav>
 	</header>
-
-		<div class="row no-gutters justify-content-center align-items-center text">
-			<div class="col-lg-5 text-center p-2">
-				<h1>正射必中</h1>
-				<p>每位射手都是不斷砍掉重練才能站在射場上。<br />我們都是第一次接觸弓道，<br />唯有不斷努力才能皆中。</p>
-				<a class="btn btn-outline-primary my-2 my-sm-0" href="index.html" role="button">瞭解更多</a>
-			</div>
-		</div>
-
-
-
-
+	<div id="main" class="row no-gutters justify-content-center align-items-top text text-center">
+		<article class="offset-lg-5 col-lg-5">
+			<h1><strong>國立東華大學弓道部</strong></h1>
+			<h2 class="text-right"><b>NDHU Kyūdō Club</b></h2>
+			<p>想學習日本弓道嗎 ? 歡迎加入弓道社 ! </p>
+			<a class="btn btn-outline-dark my-2 my-sm-0" href="index.html" role="button"><b>瞭解更多</b></a>
+		</article>
+	</div>
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Noto+Serif+TC:wght@500&display=swap"
+		rel="stylesheet">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Serif+TC:wght@500&display=swap"
-	rel="stylesheet">
+	<script>
+		$(document).ready(function () {
+			if ($(window).width() < 992) {
+				$('#main').removeClass('align-items-top');
+				$('#main').addClass('align-items-center');
+				$('#main h2').removeClass('text-right');
+			};
+		});
+	</script>
 </body>
 
 </html>
